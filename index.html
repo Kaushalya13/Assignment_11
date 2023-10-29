@@ -2,9 +2,299 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Assignment 11</title>
+    <title>Assignment_11</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/bootstrap-5.3.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
 </head>
 <body>
 
+<nav class="navbar navbar-expand-lg bg-body-tertiary shadow mb-5 bg-white fixed-top" >
+    <div class="container-fluid " >
+        <a class="navbar-brand" href="index.html">POS System</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars fa-lg"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a href="index.html" id="home-nav" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a  id="customer-nav" class="nav-link">Customer</a>
+                </li>
+                <li class="nav-item">
+                    <a  id="item-nav" class="nav-link">Item</a>
+                </li>
+                <li class="nav-item">
+                    <a id="place-order-nav" class="nav-link">Place-Order</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!--   home section  -->
+
+<div class="box" id="myTabContent">
+    <div id="text">
+        <img id="img" src="assets/images/pos.jpg">
+        <h1 id="welcome">W&nbsp;E&nbsp;L&nbsp;C&nbsp;O&nbsp;M&nbsp;E</h1>
+        <h1 id="to">T&nbsp;O</h1>
+        <h1 id="pos">P&nbsp;O&nbsp;S</h1>
+        <h1 id="system">S&nbsp;Y&nbsp;S&nbsp;T&nbsp;E&nbsp;M</h1>
+    </div>
+</div>
+
+
+<!--   customer section  -->
+
+<div id="customer-section">
+    <div class="box">
+        <div class="container">
+            <h1 id="customer">Manage Customer</h1>
+            <div class="row">
+                <!--Form-->
+                <div class="col col-xl-6 col-lg-6 col-md-12 col-sm-12 col12">
+                    <form class="from">
+                        <div class="mb-3">
+                            <label for="cus_id" class="form-label">Customer_Id</label>
+                            <input type="number" class="form-control" id="cus_id">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="name" class="form-label" >Customer_Name</label>
+                            <input type="text" class="form-control" id="name">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="salary" class="form-label">Salary</label>
+                            <input type="text" class="form-control" id="salary">
+                        </div>
+
+                        <div class="form-floating">
+                            <textarea class="form-control" id="address" style="height: 120px"></textarea>
+                            <label  for="address" >Address</label>
+                        </div>
+
+                        <div class="mt-4" id="customer_btn">
+                            <button type="button" class="btn btn-warning">Save</button>
+                            <button type="button" class="btn btn-primary">Update</button>
+                            <button type="button" class="btn btn-danger">Delete</button>
+                        </div>
+                    </form>
+                </div>
+                <!--Table-->
+                <div class="col col-xl-6 col-lg-6 col-md-12 col-sm-12 col12">
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th scope="col">Customer_Id</th>
+                            <th scope="col">Customer_Name</th>
+                            <th scope="col">Salary</th>
+                            <th scope="col">Address</th>
+                        </tr>
+                        </thead>
+                        <tbody id="customer-tbl-body"></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--   item section  -->
+
+<div id="item-section">
+    <div class="box" >
+        <div class="container">
+            <h1 id="item">Manage Item</h1>
+            <div class="row">
+                <!--Form-->
+                <div class="col col-xl-6 col-lg-6 col-md-12 col-sm-12 col12">
+                    <form class="from">
+                        <div class="mb-3">
+                            <label for="code" class="form-label">Item_code :</label>
+                            <input type="number" class="form-control" id="code">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Item_name :</label>
+                            <input type="text" class="form-control" id="item_name">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="price" class="form-label">Price :</label>
+                            <input type="text" class="form-control" id="price">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="qty" class="form-label">Quantity :</label>
+                            <input type="text" class="form-control" id="qty">
+                        </div>
+                        <div class="mt-4" id="item_btn">
+
+                            <button type="button" class="btn btn-warning">Save</button>
+                            <button type="button" class="btn btn-primary">Update</button>
+                            <button type="button" class="btn btn-danger">Delete</button>
+
+                        </div>
+                    </form>
+                </div>
+                <!--Table-->
+                <div class="col col-xl-6 col-lg-6 col-md-12 col-sm-12 col12">
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th scope="col">Code</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Price</th>
+                            <th scope="col">Qty</th>
+                        </tr>
+                        </thead>
+                        <tbody id="item-tbl-body">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--   place_order section  -->
+
+<div id="place-order-section">
+    <div class="box" >
+        <div class="manage_order">
+            <section class="sec01">
+                <form class="custom-form">
+                    <div  class="navbar navbar-expand-sm navbar-dark bg-info-subtle" style="font-weight: bold; border-radius: 5px" > &nbsp;&nbsp;Invoice Details</div>
+
+                    <input type="text" class="form-control" id="idText" placeholder="order Id...">
+
+                    <input type="date" class="form-control" id="date" placeholder="date...">
+
+                    <input type="text" class="form-control" id="customer01" placeholder="customer...">
+
+                    <div class="mb-3 input-group-sm col-12">
+                        <select class="form-select " aria-label="Default select example" id="cmbCustIDs" placeholder="Select Customer"></select>
+                    </div>
+
+                    <input type="text" class="form-control" id="name02" placeholder="cust name...">
+
+                    <input type="text" class="form-control" id="number" placeholder="number...">
+
+                    <input type="text" class="form-control" id="address01" placeholder="address...">
+
+                </form>
+            </section>
+
+            <section class="sec02">
+                <form class="custom-form" id="custom-form2">
+                    <div class="navbar navbar-expand-sm navbar-dark bg-info-subtle" style="font-weight: bold; border-radius: 5px" > &nbsp;&nbsp;Item Select</div>
+                    <br>
+
+                    <div class="mb-3 input-group-sm col-12">
+                        <select class="form-select " aria-label="Default select example" id="cmbItemIDs"></select>
+                    </div>
+
+                    <input type="text" class="form-control" id="itemName" placeholder="item name...">
+
+                    <input type="text" class="form-control" id="price01" placeholder="price...">
+
+                    <input type="text" class="form-control" id="qtyOnHand" placeholder="qtyOnHand...">
+
+                    <input type="text" class="form-control" id="qtyYouWant" placeholder="qty You Want...">
+
+                    <button id="btn-addToCart" class="btn1 btn-success">Add Item</button>
+                    <button id="Update" class="btn2 btn-success" onclick="addToCart()">Update</button>
+                </form>
+            </section>
+
+            <section class="sec03">
+                <form class="custom-form" id="custom-form3">
+                    <br>
+                    <h3 id="total">&nbsp;&nbsp;Total : <span>0</span> </h3>
+                    <br>
+                    <h3 id="subtotal">&nbsp;&nbsp;SubTotal : <span>0</span> </h3>
+                    <br>
+                    <input type="text" class="form-control" id="cash" placeholder="cash...">
+
+                    <input type="text" class="form-control" id="discount" placeholder="discount(%)">
+                    <br>
+                    <br>
+                    <input type="text" class="form-control" id="balance" placeholder="balance...">
+                    <br><br>
+                    <button type="submit" class="btn1 btn-success" id="btn-purchase-order">Purchase</button>
+                </form>
+            </section>
+
+            <section class="row mt-5">
+                <div class="col-10" id="table">
+                    <table class="table table-success table-bordered" id="addToCartTable">
+                        <thead>
+                        <tr>
+                            <th scope="col">Order Id</th>
+                            <th scope="col">Customer Name</th>
+                            <th scope="col">Item Name</th>
+                            <th scope="col">Item Price</th>
+                            <th scope="col">Quantity</th>
+                            <th scope="col">Total</th>
+                            <th scope="col">Actions</th>
+                        </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>
+
+
+<script src="assets/lib/jquery.min.js"></script>
+<script src="assets/bootstrap-5.3.1-dist"></script>
+
+<script src="controller/customerController.js"></script>
+<script src="controller/itemController.js"></script>
+<script src="controller/place-orderController.js"></script>
+
+<script>
+
+    $("#customer-section").css('display','none');
+    $("#item-section").css('display','none');
+    $("#place-order-section").css('display','none');
+
+
+    //-----------------------------Navigation--------------------------------
+    $("#home-nav").on('click',()=>{
+        $("#customer-section").css('display','none');
+        $("#item-section").css('display','none');
+        $("#place-order-section").css('display','none');
+        $("#myTabContent").css('display','block');
+    });
+
+    $("#customer-nav").on('click',()=>{
+        $("#customer-section").css('display','block');
+        $("#item-section").css('display','none');
+        $("#place-order-section").css('display','none');
+        $("#myTabContent").css('display','none');
+    });
+
+    $("#item-nav").on('click',()=>{
+        $("#customer-section").css('display','none');
+        $("#item-section").css('display','block');
+        $("#place-order-section").css('display','none');
+        $("#myTabContent").css('display','none');
+    });
+
+    $("#place-order-nav").on('click',()=>{
+        $("#customer-section").css('display','none');
+        $("#item-section").css('display','none');
+        $("#place-order-section").css('display','block');
+        $("#myTabContent").css('display','none');
+    });
+</script>
 </body>
 </html>

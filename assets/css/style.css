@@ -1,0 +1,334 @@
+body{
+    overflow: hidden;
+}
+.navbar-brand{
+    font-weight: bolder;
+    color: blue;
+}
+
+#img {
+    position: absolute;
+    width: 600px;
+    height: 400px;
+    right: 100px;
+    top: 150px;
+    border-radius: 40px;
+}
+.box {
+    background: linear-gradient(to right bottom,white,#3EBFF7);
+    width: 100%;
+    height: 100vh;
+}
+#text {
+    background:black;
+
+}
+
+#welcome {
+    position: absolute;
+    font-size: 60px;
+    top: 150px;
+    left: 150px;
+}
+
+#to {
+    position: absolute;
+    font-size: 60px;
+    top: 250px;
+    left: 300px;
+}
+
+#pos{
+    position: absolute;
+    font-size: 60px;
+    top: 350px;
+    left: 280px;
+}
+
+#system {
+    position: absolute;
+    font-size: 60px;
+    top: 450px;
+    left: 200px;
+}
+#customer{
+    position: relative;
+    left: 400px;
+    color:#051b11;
+    top: 5px;
+}
+
+#item {
+    position: relative;
+    left: 400px;
+    color: #051b11;
+    top: 5px;
+}
+
+#place-order {
+    position: relative;
+    left: 530px;
+    color: #051b11;
+    top: 0;
+}
+
+#order{
+    position: relative;
+    color: #051b11;
+    top: 70px;
+}
+.container{
+    position: relative;
+    top: 100px;
+    background: linear-gradient(to right top,#0c2461,#95a5a6);
+    border-radius: 50px;
+    /*border: 1px solid black;*/
+}
+
+.form-control{
+    position: relative;
+    width: 350px;
+    left: 50px;
+}
+
+.form-label{
+    position: relative;
+    left: 20px;
+}
+
+
+.table{
+    position: relative;
+    top: 150px;
+    border: 2px solid black;
+    left:-40px;
+}
+
+.btn {
+    position: relative;
+    top: -310px;
+    left: 860px;
+}
+
+#btn01{
+    position: relative;
+    top: 50px;
+
+}
+
+
+.manage_order{
+    position: relative;
+}
+
+.sec01{
+    position: relative;
+    left: 40px;
+}
+
+.sec02{
+    position: relative;
+    left:40px;
+}
+
+.sec03{
+    position: relative;
+    left:40px;
+}
+.custom-form {
+    width: 400px;
+    height: 380px;
+    padding: 10px;
+    border: 1px solid green;
+    margin: 20px;
+    position: absolute;
+    top: 24px;
+    background: linear-gradient(to right top,#0c2461,#95a5a6);
+    border-radius: 30px;
+}
+
+#custom-form2{
+    width: 500px;
+    height: 380px;
+    padding: 10px;
+    border: 1px solid #b6d4fe;
+    margin: 20px;
+    position: absolute;
+    left: 440px;
+    top: 24px;
+    background: linear-gradient(to right top,#0c2461,#95a5a6);
+    border-radius: 30px;
+}
+
+#custom-form3{
+    width: 310px;
+    height: 380px;
+    padding: 10px;
+    border: 1px solid #b6d4fe;
+    margin: 20px;
+    position: absolute;
+    left: 980px;
+    top: 24px;
+}
+
+#idText{
+    width: 170px;
+    display: inline;
+    left: 10px;
+    top: 25px;
+}
+
+#date{
+    width: 170px;
+    height: 38px;
+    position: absolute;
+    left: 220px;
+    display: inline;
+    top: 75px;
+}
+
+#customer01{
+    width: 170px;
+    position: absolute;
+    top: 150px;
+    left: 20px;
+}
+
+#cmbCustIDs{
+    width: 170px;
+    height: 35px;
+    display: inline;
+    position: absolute;
+    left: 220px;
+    top: 150px;
+}
+
+#name02{
+    width: 170px;
+    position: absolute;
+    top: 230px;
+    left: 20px;
+}
+
+#number{
+    width: 170px;
+    display: inline;
+    position: absolute;
+    left: 220px;
+    top: 230px;
+}
+
+#address01{
+    width: 370px;
+    position: absolute;
+    top: 300px;
+    left: 20px;
+
+}
+
+#cmbItemIDs{
+    width: 200px;
+    display: inline;
+    left: 20px;
+    position: relative;
+    top: 5px;
+}
+
+#itemName{
+    width: 200px;
+    position: absolute;
+    left: 270px;
+    top: 75px;
+    display: inline;
+}
+
+#price01{
+    width: 200px;
+    position: relative;
+    top: 30px;
+    left: 20px;
+
+}
+
+#qtyOnHand{
+    width: 200px;
+    display: inline;
+    position: absolute;
+    left: 270px;
+    top: 150px;
+}
+
+#qtyYouWant{
+    width: 370px;
+    position: absolute;
+    top: 250px;
+    left: 30px;
+}
+
+.btn1{
+    width: 100px;
+    height: 37px;
+    border-radius: 5px;
+    position: absolute;
+    top: 310px;
+    right: 20px;
+}
+
+.btn2{
+    width: 100px;
+    height: 37px;
+    border-radius: 5px;
+    position: absolute;
+    top: 0px;
+    right: 20px;
+    display: none;
+}
+
+#cash{
+    width: 120px;
+    position: relative;
+    left: 0;
+}
+
+#discount{
+    width: 120px;
+    height: 38px;
+    position: absolute;
+    left: 180px;
+    top: 165px;
+}
+
+#balance{
+    width: 280px;
+    position: relative;
+    left: 5px;
+}
+
+#table{
+    position: absolute;
+    top: 300px;
+    left: 150px;
+}
+
+/*@media all and (max-width: 1350px) {*/
+/*    #customform2 {*/
+/*        top: 486px;*/
+/*        left: 0px;*/
+/*    }*/
+
+/*    #customform3 {*/
+/*        top: 886px;*/
+/*        left: 0px;*/
+/*    }*/
+
+/*    .table {*/
+/*        position: absolute;*/
+/*        top: 1296px;*/
+
+/*    }*/
+/*}*/
+
+/*#table{*/
+/*    position: relative;*/
+/*    left: 10px;*/
+/*}*/
