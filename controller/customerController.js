@@ -1,8 +1,14 @@
 import {customer_db} from "../db/db";
 
-
-//----------------------------------Customer from-------------------------------------
 var row_index = null;
+
+
+const cleanInputs =() =>{
+    $('#cus_id').val('');
+    $('#name').val('');
+    $('#salary').val('');
+    $('#address').val('');
+}
 
 //-----Submit-------
 $("#customer_btn>button[type='button']").eq(0).on("click", () => {
