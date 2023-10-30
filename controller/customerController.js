@@ -1,4 +1,5 @@
 import {customer_db} from "../db/db";
+import {CustomerModel} from "../model/CustomerModel";
 
 var row_index = null;
 
