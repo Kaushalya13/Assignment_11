@@ -1,10 +1,10 @@
 #nav{
-    background: linear-gradient(to right top,midnightblue,#95a5a6);
+    background: linear-gradient(to right top,grey,green);
 }
 
 #home-tab-pane{
     display: inline-block;
-    background: linear-gradient(to right bottom,white,#3EBFF7);
+    background: linear-gradient(to right bottom,green,grey);
 
 }
 
@@ -169,7 +169,7 @@
 }
 
 #customer{
-    background: linear-gradient(to right top,midnightblue,#95a5a6);
+    background: linear-gradient(to left top,grey,#4cd137);
     margin: 50px 0 50px 0;
     text-align: center;
     color: white;
@@ -177,7 +177,7 @@
 }
 
 #store{
-    background: linear-gradient(to right top,#0c2461,#95a5a6);
+    background: linear-gradient(to right top,green,#95a5a6);
     margin: 50px 0 50px 0;
     text-align: center;
     color: white;
@@ -185,7 +185,7 @@
 }
 
 #placeOrder{
-    background: linear-gradient(to right top,#0c2461,#95a5a6);
+    background: linear-gradient(to right top,green,#95a5a6);
     margin: 50px 0 50px 0;
     text-align: center;
     color: white;
@@ -193,7 +193,7 @@
 }
 
 #OrderHistory{
-    background: linear-gradient(to right top,#0c2461,#95a5a6);
+    background: linear-gradient(to right top,green,#95a5a6);
     margin: 50px 0 50px 0;
     text-align: center;
     color: white;
@@ -288,16 +288,16 @@
 }
 
 #CustomerTextField{
-    border: 2px solid #0d6efd;
+    border: 2px solid grey;
     border-radius: 10px;
-    background-color:cornflowerblue;
+    background-color:grey;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
 }
 
 #StoreTextField{
-    border: 2px solid #0d6efd;
+    border: 2px solid grey;
     border-radius: 10px;
-    background-color: cornflowerblue;
+    background-color: grey;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
 }
 
@@ -306,24 +306,24 @@
 }
 
 #placeOrderText1{
-    border: 2px solid #0d6efd;
+    border: 2px solid grey;
     border-radius: 10px;
-    background-color: cornflowerblue;
+    background-color: grey;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
     margin-bottom: 10px;
 }
 
 #placeOrderText2{
-    border: 2px solid #0d6efd;
+    border: 2px solid grey;
     border-radius: 10px;
-    background-color: cornflowerblue;
+    background-color: grey;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
 }
 
 #placeOrderText3{
-    border: 2px solid #0d6efd;
+    border: 2px solid grey;
     border-radius: 10px;
-    background-color: cornflowerblue;
+    background-color: grey;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
 }
 
